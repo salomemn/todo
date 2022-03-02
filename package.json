@@ -1,0 +1,19 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "node",
+  "main": "1",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "todo"
+  },
+  "keywords": [
+    "todo",
+    "node"
+  ],
+  "author": "salomemn",
+  "license": "ISC"
+}
