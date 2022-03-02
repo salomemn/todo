@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const args = process.argv;
 
-// app.js" is 6 characters long so -6
+// "app.js" is 6 characters long so -6
 // removes last 6 characters
 const currentWorkingDirectory = args[1].slice(0, -6);
 
