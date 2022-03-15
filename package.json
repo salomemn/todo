@@ -4,6 +4,7 @@
   "description": "node",
   "main": "1",
   "scripts": {
+    "start": "node app.js",
     "test": "test"
   },
   "repository": {
@@ -15,5 +16,11 @@
     "node"
   ],
   "author": "salomemn",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.5",
+    "mongoose-unique-validator": "^3.0.0"
+  }
 }

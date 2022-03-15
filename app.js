@@ -1,8 +1,26 @@
+const mongoose = require("mongoose");
 const fs = require('fs');
-
 const args = process.argv;
 
-// app.js" is 6 characters long so -6
+const mongoString = "mongodb+srv://salome:Poussy2001@cluster0.jzruj.mongodb.net/todo?retryWrites=true&w=majority"
+
+mongoose.connect(mongoString, {useNewUrlParser: true})
+
+mongoose.connection.on("error", function(error) {
+  console.log(error)
+})
+
+mongoose.connection.on("open", function() {
+  console.log("Connected to MongoDB database.")
+})
+
+const stuffRoutes = require('./routes/stuff');
+app.use('/api/stuff', stuffRoutes);
+const userRoutes = require('./routes/user');
+app.use('/api/stuff', stuffRoutes);
+app.use('/api/auth', userRoutes);
+
+// "app.js" is 6 characters long so -6
 // removes last 6 characters
 const currentWorkingDirectory = args[1].slice(0, -6);
 
@@ -341,3 +359,4 @@ const rl = readline.createInterface({
     output: process.stdout
 
 });
+
