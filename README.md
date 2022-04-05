@@ -1,8 +1,14 @@
-# app.js
-*npm start
+#Application todo avec interface web
+***
 
-# index.js
-=
+##app.js
+npm start
+
+
+#Application todo dans terminal
+***
+
+##index.js
 *node index.js                 //pour lancer le fichier app.js
 *node index.js add "todo item" //ajoute une tâche
 *node index.js ls              //affiche les tâches restantes
