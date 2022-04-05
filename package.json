@@ -1,10 +1,10 @@
 {
-  "name": "node",
+  "name": "index",
   "version": "1.0.0",
   "description": "node",
   "main": "1",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node index.js",
     "test": "test"
   },
   "repository": {

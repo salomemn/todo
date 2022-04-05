@@ -8,6 +8,8 @@ var passport = require("passport"),
 	passportLocalMongoose = require("passport-local-mongoose"),
 	User = require("./models/user");
 
+
+
 //CONNEXION AVEC MONGOOSE
 const mongoose = require("mongoose");
 const mongoString = "mongodb+srv://salome:Poussy2001@cluster0.jzruj.mongodb.net/todo?retryWrites=true&w=majority";
@@ -178,5 +180,3 @@ function isLoggedIn(req, res, next) {
 //LIE ET ECOUTE LES CONNEXIONS SUR L'HOTE ET LE PORT SPECIFIES
 app.listen(3000,() => {console.log("Server Up and running")})
 
-
-//TODO LISTE EN LIGNE DE COMMANDE
