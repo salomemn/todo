@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--page d'erreur de connexion-->
+<head>
+    <title>Todo App</title>
+    <link rel="stylesheet" href="/static/stylesheets/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Candal|Chewy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+
+<div class = "todo-container">
+    <h1> Se connecter</h1>
+    <div class="todo-header">
+        <div class="input">
+            <form method="POST" action="/loginfail">
+                <input type="text" name="username" placeholder="identifiant">
+                <input type="password" name="password" placeholder="mot de passe">
+                <button> Se connecter</button>
+            </form>
+    </div>
+    <p>Mauvais mot de passe.</p></br>
+</div>
+<a href="/register">S'inscrire</a>
+<a href="/logout">Accueil</a>
+</div>
+</body>
